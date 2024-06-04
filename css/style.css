@@ -1,0 +1,400 @@
+/*=================================================================*/
+
+/*                      BASE                              
+/*=================================================================*/
+
+body {
+    color: #888;
+    background-color: #276f9b;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#sdsd {
+    font-family: "cutie", sans-serif;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 300px;
+    letter-spacing: 10px;
+    text-shadow:
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
+    /* Adds a shadow that looks like a border around each letter */
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.relative {
+    position: relative;
+}
+
+::selection {
+    color: #fff;
+    background: #111;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #111;
+    /* Gecko Browsers */
+}
+
+/*=================================================================*/
+
+/*                      TYPOGRAPHY                              
+/*=================================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    color: #274462;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 56px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+a {
+    color: #111;
+    outline: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #ff8caa;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0;
+}
+
+p {
+    line-height: 1.7;
+}
+
+blockquote {
+    padding: 20px 20px;
+    margin: 0 0 20px;
+    font-size: 16px;
+    background: #f7f7f7;
+    border-radius: 10px;
+}
+
+blockquote p {
+    line-height: 1.6;
+}
+
+/* === Pre === */
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.container-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*=================================================================*/
+
+/*                     NAVIGATION
+/*=================================================================*/
+
+.navbar {
+    padding: 40px 0 0 0;
+}
+
+/*=================================================================*/
+
+/*                      HOME TEXT
+/*=================================================================*/
+
+.home-text {
+    margin: 90px 0 40px;
+}
+
+.home-text h2 {
+    font-size: 40px;
+    margin: 0 0 20px;
+}
+
+.home-text span {
+    color: #888;
+    font-size: 20px;
+}
+
+/*=================================================================*/
+
+/*                      FOOTER
+/*=================================================================*/
+
+footer {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+footer .social-icons {
+    margin-bottom: 40px;
+}
+
+footer .copyright {
+    font-size: 16px;
+    color: #888;
+}
+
+/*=================================================================*/
+
+/*                      PAGE
+/*=================================================================*/
+
+.page-header {
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.page-header h1 {
+    margin: 0;
+}
+
+.page-header p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.content {
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-bottom: 0;
+}
+
+.social-icons li {
+    line-height: 0;
+}
+
+.social-icons li a {
+    font-size: 22px;
+}
+
+.social-icons li a:hover {
+    color: #76b900;
+}
+
+.social-icons li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social-icons.light li a {
+    color: #fff;
+}
+
+.social-icons.light li a:hover {
+    color: #76b900;
+}
+
+.deez-nut-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.text-content h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #76b900;
+}
+
+.text-content p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.image-content .responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+#image-wrapper {
+    position: relative;
+    width: max-content;
+}
+
+#image-wrapper img {
+    display: block;
+}
+
+#image-wrapper::after {
+    content: "Trump lost Hat";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 100);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    /* font-size: 14px; */
+}
+
+@media (min-width: 1024.5px) {
+    #image-wrapper::after {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #image-wrapper::after {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 820px) {
+    #image-wrapper::after {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    #image-wrapper::after {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 430px) {
+    #image-wrapper::after {
+        font-size: 11px;
+    }
+}
+
+
+#image-wrapper-2 {
+    position: relative;
+    width: max-content;
+}
+
+#image-wrapper-2 img {
+    display: block;
+}
+
+#image-wrapper-2::after {
+    content: "Trump lost Hat";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 100);
+    color: white;
+    /* padding: 5px 10px; */
+    border-radius: 3px;
+    font-size: 9px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .text-content h2 {
+        font-size: 36px;
+        /* Smaller font size on smaller screens */
+    }
+
+    .text-content p {
+        font-size: 18px;
+        /* Smaller font size on smaller screens */
+    }
+
+    .image-content .responsive-image {
+        max-width: 300px;
+        /* Smaller images on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .deez-nut-section {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+        /* Even smaller font size on very small screens */
+    }
+
+    .text-content p {
+        font-size: 16px;
+        /* Even smaller font size on very small screens */
+    }
+
+    .image-content .responsive-image {
+        max-width: 200px;
+        /* Even smaller images on very small screens */
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
