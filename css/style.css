@@ -345,17 +345,17 @@ footer .copyright {
     display: block;
 }
 
-#image-wrapper-2::after {
+/* #image-wrapper-2::after {
     content: "Trump lost Hat";
     position: absolute;
     bottom: 10px;
     right: 10px;
     background-color: rgba(0, 0, 0, 100);
     color: white;
-    /* padding: 5px 10px; */
+    padding: 5px 10px;
     border-radius: 3px;
     font-size: 9px;
-}
+} */
 
 /* Responsive styles */
 
