@@ -292,7 +292,7 @@ footer .copyright {
     display: block;
 }
 
-#image-wrapper::after {
+/* #image-wrapper::after {
     content: "Trump lost Hat";
     position: absolute;
     bottom: 10px;
@@ -301,8 +301,9 @@ footer .copyright {
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
-    /* font-size: 14px; */
-}
+    font-size: 14px; 
+} 
+*/
 
 @media (min-width: 1024.5px) {
     #image-wrapper::after {
